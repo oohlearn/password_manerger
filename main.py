@@ -75,6 +75,7 @@ def search_password():
     else:
         messagebox.showinfo(title=website_entry.get(), message=f"Email: {ask_email}\n"
                                                        f"Password: {ask_password}")
+        pyperclip.copy(ask_password)
 
 
 
